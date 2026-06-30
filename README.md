@@ -4,6 +4,7 @@
   <img src="tci-logo.png" alt="Technology for Criminal Investigation logo" height="80">
   &nbsp;&nbsp;&nbsp;
   <img src="saxion-logo.png" alt="Saxion University of Applied Sciences logo" height="80">
+  <img src="uktc-logo.png" alt="National High School of Computer Technologies and Systems logo" height="80">
 </p>
 
 This project explores an AI-powered camera detection system for crime scene investigations. When officers arrive at a crime scene, one of the first and most time-sensitive tasks is finding nearby civilian surveillance cameras that may have captured the incident. Today, this process is often manual: officers walk the scene perimeter, scan buildings, knock on doors, and try to locate footage before it is overwritten.
