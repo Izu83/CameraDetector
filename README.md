@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.saxion.edu/"><img src="saxion-logo.png" alt="Saxion University of Applied Sciences" height="70"></a>
+  <a href="https://www.saxion.edu/"><img src="assets/saxion-plate.png" alt="Saxion University of Applied Sciences" height="70"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="tci-logo.png" alt="Technologies for Criminal Investigation" height="70">
+  <a href="https://www.saxion.edu/research/research-groups/technologies-for-criminal-investigations"><img src="assets/tci-plate.png" alt="Technologies for Criminal Investigation" height="70"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.politieacademie.nl/"><img src="assets/politie-academie-logo.png" alt="Politie Academy" height="70"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://uktc.bg/"><img src="uktc-logo.png" alt="National High School of Computer Technologies and Systems" height="70"></a>
+  <a href="https://uktc-bg.com"><img src="assets/uktc-plate.png" alt="National High School of Computer Technologies and Systems" height="70"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/Izu83"><img src="assets/izu83.png" alt="Izu83 on GitHub" height="70"></a>
   &nbsp;&nbsp;
