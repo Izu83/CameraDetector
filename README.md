@@ -7,7 +7,9 @@
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="tci-logo.png" alt="Technologies for Criminal Investigation" height="70">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="uktc-logo.png" alt="National High School of Computer Technologies and Systems" height="70">
+  <a href="https://www.politieacademie.nl/"><img src="assets/politie-academie-logo.png" alt="Politie Academy" height="70"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://uktc.bg/"><img src="uktc-logo.png" alt="National High School of Computer Technologies and Systems" height="70"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/Izu83"><img src="assets/izu83.png" alt="Izu83 on GitHub" height="70"></a>
   &nbsp;&nbsp;
@@ -15,13 +17,31 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-171717?style=for-the-badge&logo=python&logoColor=21F1A8" alt="Python">
-  <img src="https://img.shields.io/badge/YOLOv8-171717?style=for-the-badge&logo=ultralytics&logoColor=21F1A8" alt="YOLOv8">
-  <img src="https://img.shields.io/badge/ONNX-171717?style=for-the-badge&logo=onnx&logoColor=21F1A8" alt="ONNX">
-  <img src="https://img.shields.io/badge/Roboflow-171717?style=for-the-badge&logo=roboflow&logoColor=21F1A8" alt="Roboflow">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-171717?style=for-the-badge&logo=python&logoColor=21F1A8" alt="Python"></a>
+  <a href="https://docs.ultralytics.com/models/yolov8/"><img src="https://img.shields.io/badge/YOLOv8-171717?style=for-the-badge&logo=ultralytics&logoColor=21F1A8" alt="YOLOv8"></a>
+  <a href="https://onnx.ai/"><img src="https://img.shields.io/badge/ONNX-171717?style=for-the-badge&logo=onnx&logoColor=21F1A8" alt="ONNX"></a>
+  <a href="https://roboflow.com/"><img src="https://img.shields.io/badge/Roboflow-171717?style=for-the-badge&logo=roboflow&logoColor=21F1A8" alt="Roboflow"></a>
 </p>
 
-## About
+<h2 id="contents"><img src="assets/h-contents.png" alt="Contents" height="32"></h2>
+
+<p align="center">
+  <a href="#about"><img src="https://img.shields.io/badge/About-171717?style=for-the-badge" alt="About"></a>
+  <a href="#poster"><img src="https://img.shields.io/badge/Poster-171717?style=for-the-badge" alt="Poster"></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/Requirements-171717?style=for-the-badge" alt="Requirements"></a>
+  <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-171717?style=for-the-badge" alt="Dataset"></a>
+  <a href="#models"><img src="https://img.shields.io/badge/Models-171717?style=for-the-badge" alt="Models"></a>
+  <a href="#results"><img src="https://img.shields.io/badge/Results-171717?style=for-the-badge" alt="Results"></a>
+  <a href="#takeaways"><img src="https://img.shields.io/badge/Takeaways-171717?style=for-the-badge" alt="Takeaways"></a>
+  <a href="#layout"><img src="https://img.shields.io/badge/Layout-171717?style=for-the-badge" alt="Layout"></a>
+  <a href="#running"><img src="https://img.shields.io/badge/Running_it-171717?style=for-the-badge" alt="Running it"></a>
+  <a href="#limitations"><img src="https://img.shields.io/badge/Limitations-171717?style=for-the-badge" alt="Limitations"></a>
+  <a href="#next"><img src="https://img.shields.io/badge/What's_next-171717?style=for-the-badge" alt="What's next"></a>
+  <a href="#thanks"><img src="https://img.shields.io/badge/Thanks-171717?style=for-the-badge" alt="Thanks"></a>
+</p>
+
+
+<h2 id="about"><img src="assets/h-about.png" alt="About" height="32"></h2>
 
 When police arrive at a crime scene, one of the first jobs is finding out whether any nearby cameras saw what happened. Doorbells, shop fronts, parking lots, someone's balcony. Right now that mostly means walking the perimeter, looking up at buildings and knocking on doors, all while the footage on those cameras slowly gets overwritten.
 
@@ -37,7 +57,7 @@ I built it during my internship as a software/AI developer. The work was done fo
 | **Made for** | Saxion University of Applied Sciences, TCI and Politie Academy (Netherlands) <img src="assets/flag-nl.png" alt="Netherlands" height="14"> |
 | **School** | UKTC, National High School of Computer Technologies and Systems <img src="assets/flag-bg.png" alt="Bulgaria" height="14"> |
 
-## Poster
+<h2 id="poster"><img src="assets/h-poster.png" alt="Poster" height="32"></h2>
 
 The full story on one page. Click it to open the PDF.
 
@@ -49,7 +69,7 @@ The full story on one page. Click it to open the PDF.
 
 The complete write-up is in [`technical_report.docx`](technical_report.docx).
 
-## What it needs to do
+<h2 id="requirements"><img src="assets/h-requirements.png" alt="What it needs to do" height="32"></h2>
 
 An officer on scene doesn't have time for a tool that is slow or unreliable, so the model was judged against a few practical requirements:
 
@@ -59,7 +79,7 @@ An officer on scene doesn't have time for a tool that is slow or unreliable, so 
 - **Robustness.** Different lighting, mounting angles and camera types.
 - **Works offline.** It should be able to run on a field device without a constant internet connection.
 
-## Dataset
+<h2 id="dataset"><img src="assets/h-dataset.png" alt="Dataset" height="32"></h2>
 
 The task is binary classification with two classes: `Camera` and `No Camera`.
 
@@ -85,7 +105,7 @@ To get from around 5,000 photos to a balanced 27,000, I augmented the data with:
 - perspective transforms
 - grayscale conversion
 
-## The two models
+<h2 id="models"><img src="assets/h-models.png" alt="The two models" height="32"></h2>
 
 I trained two different pipelines on the same data and compared them.
 
@@ -96,7 +116,7 @@ I trained two different pipelines on the same data and compared them.
 
 The point wasn't only to see which one scores higher. It was to figure out which one would actually work better for police in the field.
 
-## Results
+<h2 id="results"><img src="assets/h-results.png" alt="Results" height="32"></h2>
 
 ### Automated test set (2,700 images)
 
@@ -136,7 +156,7 @@ The ranking flipped. Roboflow labelled the car and the chicken bucket as cameras
 | Camera 2 | 99.6% | 99.8% |
 | Camera 3 | 99.6% | 100.0% |
 
-## What I took from it
+<h2 id="takeaways"><img src="assets/h-takeaways.png" alt="What I took from it" height="32"></h2>
 
 - Strong numbers on a test set don't automatically mean strong behaviour on new images. Roboflow looked better on paper, but YOLOv8 held up better on things it had never seen.
 - Roboflow's two mistakes were low-confidence, so a confidence threshold would probably catch them.
@@ -146,7 +166,7 @@ The ranking flipped. Roboflow labelled the car and the chicken bucket as cameras
 
 I recommend **YOLOv8 Medium** as the main model. It did best on the real-world test, it exports to ONNX, and it runs on your own hardware without depending on a cloud platform. That makes it a much better fit for eventually running on a tablet in the field.
 
-## Repository layout
+<h2 id="layout"><img src="assets/h-layout.png" alt="Repository layout" height="32"></h2>
 
 ```
 CameraDetector/
@@ -164,7 +184,7 @@ CameraDetector/
 └── technical_report.docx
 ```
 
-## Running it
+<h2 id="running"><img src="assets/h-running.png" alt="Running it" height="32"></h2>
 
 ### YOLOv8 Medium
 
@@ -195,7 +215,7 @@ python Roboflow/main.py
 
 This needs your own Roboflow API key.
 
-## Limitations
+<h2 id="limitations"><img src="assets/h-limitations.png" alt="Limitations" height="32"></h2>
 
 It is still a plain classifier, so for now it can't:
 
@@ -207,7 +227,7 @@ It is still a plain classifier, so for now it can't:
 
 The dataset could also use more variety: more lighting conditions, camera designs, mounting angles and environments.
 
-## What's next
+<h2 id="next"><img src="assets/h-next.png" alt="What's next" height="32"></h2>
 
 - Move from classification to real object detection, with bounding boxes around every camera
 - Handle multiple cameras per image
@@ -216,7 +236,7 @@ The dataset could also use more variety: more lighting conditions, camera design
 - Shrink the model so it runs locally on rugged field tablets
 - Add a feedback loop so mistakes made in the field can be used to improve the next version
 
-## Thanks
+<h2 id="thanks"><img src="assets/h-thanks.png" alt="Thanks" height="32"></h2>
 
 Thank you to my mentor **Dimitar Rangelov** for the guidance throughout the internship, and to **Saxion**, **TCI** and the **Politie Academy** in the Netherlands for the opportunity to work on something with a real use case behind it. Thanks also to my school, **UKTC**.
 
